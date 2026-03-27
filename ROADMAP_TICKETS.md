@@ -1,7 +1,7 @@
 # Passion Seed Mobile - 12-Month Roadmap Tickets
 
 **Generated:** 2026-03-28
-**Updated:** 2026-03-28 05:48 (cron job — verified Linear state, all 7 dream state features covered)
+**Updated:** 2026-03-28 06:19 (cron job — gap analysis complete, 5 infrastructure tickets created)
 **Team:** PS (Passion Seed) — ID: ace4cb8d-f6ff-435f-addb-7c72fe45dd48
 **Linear:** https://linear.app/passionseed/ps
 **Context:** Gap analysis between current app state and 12-month dream state
@@ -20,14 +20,15 @@
 - Push notification infrastructure
 
 ✅ **Dream state coverage:** All 7 dream state features have tickets (no gaps)
+✅ **Infrastructure gaps identified and filled:** 5 new tickets created (PS-18 to PS-22)
 
-**Linear Status (2026-03-28 05:48):**
+**Linear Status (2026-03-28 06:19):**
 - PS team: `ace4cb8d-f6ff-435f-addb-7c72fe45dd48`
-- **17 total issues** (all open, all in Backlog)
-- **State breakdown:** Backlog: 17, In Progress: 0, Todo: 0, Done: 0
-- **Priority breakdown:** P1 (High): 8, P2 (Medium): 7, P3 (Low): 2
+- **22 total issues** (all open, all in Backlog)
+- **State breakdown:** Backlog: 22, In Progress: 0, Todo: 0, Done: 0
+- **Priority breakdown:** P1 (Urgent): 8, P2 (High): 10, P3 (Medium): 4
 
-✅ **Backlog Health:** Clean — no duplicates found. Tickets PS-1 through PS-17 are unique and well-scoped.
+✅ **Backlog Health:** Clean — no duplicates. Tickets PS-1 through PS-22 are unique and well-scoped.
 
 ---
 
@@ -377,6 +378,85 @@ CREATE TABLE expert_chats (
 3. **PS-14** → Connect profile.tsx to real data (first user-visible win)
 4. **PS-15** → Seed ranking algorithm (blocks PS-16)
 5. **PS-16** → Personalized discover queue (core value prop)
+
+---
+
+## Infrastructure Tickets (Enablers)
+
+### PS-18: Build A/B testing infrastructure for feature experiments
+**Priority:** 🟡 High
+**Estimate:** 4 days
+
+**Problem:** Multiple tickets mention A/B testing but no infrastructure exists.
+
+**Acceptance Criteria:**
+- [ ] Create `ab_experiments` and `user_experiment_assignments` tables
+- [ ] Build `get_experiment_variant(user_id, experiment_name)` edge function
+- [ ] Admin dashboard for experiment management
+- [ ] Analytics: conversion rates, metric comparison by variant
+
+**Initial Experiments:**
+1. Seed ranking algorithm (affinity-weighted vs chronological)
+2. Profile affinity scoring (enabled vs disabled)
+3. Push notification timing (morning vs evening)
+
+---
+
+### PS-19: Implement analytics event tracking system
+**Priority:** 🟡 High
+**Estimate:** 5 days
+
+**Problem:** No systematic way to measure engagement or recommendation effectiveness.
+
+**Acceptance Criteria:**
+- [ ] Create `analytics_events` table with batching support
+- [ ] Track core events: `seed_viewed`, `seed_enrolled`, `seed_completed`, `reflection_submitted`, `recommendation_clicked`
+- [ ] Analytics dashboard (web admin)
+- [ ] Cohort analysis: D1/D7/D30 retention
+
+**Integration:** Feeds PS-4 (ranking CTR), PS-6 (Direction Finder), PS-7 (completion rates)
+
+---
+
+### PS-20: Build push notification scheduler for daily seed queue refresh
+**Priority:** 🟢 Medium
+**Estimate:** 3 days
+
+**Problem:** PS-4 mentions daily queue refresh but no scheduling system exists.
+
+**Acceptance Criteria:**
+- [ ] Create `notification_schedules` table (per-user preferences)
+- [ ] Daily cron job: call seed-ranking, send personalized push
+- [ ] Settings screen: notification preferences, quiet hours
+- [ ] Metrics: open rate, CTR, unsubscribe rate
+
+---
+
+### PS-21: Build Direction Finder recommendation algorithm
+**Priority:** 🟡 High
+**Estimate:** 4 days
+
+**Problem:** PS-6 mentions Direction Finder but algorithm is not scoped.
+
+**Acceptance Criteria:**
+- [ ] Create `direction_finder_recommendations` table
+- [ ] Recommendation signals: engagement, exploration gaps, trending, TCAS alignment
+- [ ] Generate top 3 recommendations with explanations
+- [ ] Weekly refresh or on new reflection
+
+---
+
+### PS-22: Build cohort comparison analytics for social proof
+**Priority:** 🟢 Medium
+**Estimate:** 3 days
+
+**Problem:** PS-7 mentions cohort comparison but no analytics pipeline exists.
+
+**Acceptance Criteria:**
+- [ ] Create `cohort_metrics` materialized view
+- [ ] Calculate: completion rate, university continuation, skill mastery, time to completion
+- [ ] Display on seed detail: "85% of completers felt more confident"
+- [ ] "Students like you" section with similar profile filtering
 
 ---
 
