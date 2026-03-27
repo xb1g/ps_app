@@ -1,7 +1,7 @@
 # Passion Seed Mobile - 12-Month Roadmap Tickets
 
 **Generated:** 2026-03-28
-**Updated:** 2026-03-28 (cron job - created PS team + PS-1 through PS-10 in Linear)
+**Updated:** 2026-03-28 02:54 (cron job - created PS-12 through PS-17: actionable foundation breakdown)
 **Team:** PS (Passion Seed Main) - ID: ace4cb8d-f6ff-435f-addb-7c72fe45dd48
 **Linear:** https://linear.app/passionseed/ps
 **Context:** Gap analysis between current app state and 12-month dream state
@@ -350,6 +350,39 @@ CREATE TABLE expert_chats (
 2. PS-1: Ikigai calculation (first personalization feature)
 3. PS-3: Thai localization (critical for Thai students)
 4. PS-2: Affinity scoring (personalized discover queue)
+
+---
+
+### 2026-03-28 02:54: Foundation Breakdown Tickets Created (PS-12 to PS-17)
+
+**Actions completed:**
+- Analyzed codebase: profile.tsx uses MOCK_IKIGAI, discover.tsx has no personalization
+- Created 6 actionable tickets breaking down PS-1, PS-2, PS-4, PS-5 into implementable chunks
+- All new tickets are P1-P2 priority, focused on foundation for personalization
+
+**New tickets created:**
+| ID | Title | Priority | Label | Parent |
+|----|-------|----------|-------|--------|
+| PS-12 | Create user_profile_signals table for tracking affinity data | P1 | backend | PS-2 |
+| PS-13 | Build career-insights edge function for ikigai calculation | P1 | backend | PS-1 |
+| PS-14 | Connect profile.tsx to real ikigai edge function | P1 | mobile | PS-1 |
+| PS-15 | Implement seed ranking algorithm (affinity + exploration gaps) | P2 | backend | PS-4 |
+| PS-16 | Update discover.tsx to use ranked seed endpoint | P2 | mobile | PS-4 |
+| PS-17 | Add exploration gap tracking to profile signals | P2 | backend | PS-5 |
+
+**Updated Linear Status:**
+- **Total PS issues:** 17
+- **Backlog:** 17 (all tickets)
+- **P1 (Foundation):** PS-1, PS-2, PS-3, PS-4, PS-11, PS-12, PS-13, PS-14 (8 tickets)
+- **P2 (Personalization):** PS-5, PS-6, PS-7, PS-8, PS-15, PS-16, PS-17 (7 tickets)
+- **P3 (Expert/Social):** PS-9, PS-10 (2 tickets)
+
+**Critical Path (start here):**
+1. **PS-12** → Database table for profile signals (blocks PS-13, PS-15, PS-17)
+2. **PS-13** → Ikigai calculation edge function (blocks PS-14)
+3. **PS-14** → Connect profile.tsx to real data (first user-visible win)
+4. **PS-15** → Seed ranking algorithm (blocks PS-16)
+5. **PS-16** → Personalized discover queue (core value prop)
 
 ---
 
