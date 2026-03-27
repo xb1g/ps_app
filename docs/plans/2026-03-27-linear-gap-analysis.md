@@ -1,52 +1,64 @@
 # Linear Gap Analysis — Passion Seed Mobile
 
 **Date:** 2026-03-27  
-**Updated:** 2026-03-28 (cron job — verified Linear state)  
+**Updated:** 2026-03-28 03:30 (cron job — verified Linear state)  
 **Analysis:** Dream State vs Current Tickets vs Implemented
 
 ---
 
-## Current Linear State (Verified 2026-03-28)
+## Current Linear State (Verified 2026-03-28 03:30)
 
-**Team:** Big (not "ps" — tickets use BIG-XX prefix)  
-**Total Issues:** 14 (10 backlog, 4 done)
+**Team:** Passion Seed (key: PS)  
+**Team ID:** ace4cb8d-f6ff-435f-addb-7c72fe45dd48  
+**Total Open Issues:** 17 (all in Backlog)  
+**Big Team:** 0 open issues (all completed/migrated)
 
 ### Active Backlog Tickets (by priority)
 
-| ID | Priority | Title | Dream State Coverage |
-|----|----------|-------|---------------------|
-| BIG-39 | P1 | Define profile signals schema | #1 (foundation) |
-| BIG-40 | P1 | Build reflection aggregation pipeline | #3, #4 |
-| BIG-41 | P1 | Implement ikigai calculation engine | #3 |
-| BIG-42 | P1 | Build seed ranking algorithm | #1 |
-| BIG-44 | P1 | Build expert interview → PathLab pipeline | #2 |
-| BIG-45 | P1 | Implement Thai/English localization system | #6 |
-| BIG-43 | P2 | Connect reflection trends to Direction Finder | #4 |
-| BIG-46 | P2 | Build expert conversation layer | #5 |
-| BIG-47 | P2 | Add social proof features | #7 |
-| BIG-48 | P3 | Seed velocity analytics dashboard | (bonus analytics) |
+**P1 — Foundation (8 tickets):**
+| ID | Title | Dream State Coverage |
+|----|-------|---------------------|
+| PS-1 | Implement real Ikigai calculation from reflection data | #3 |
+| PS-2 | Add profile affinity scoring to seed ranking | #1 |
+| PS-3 | Create seed content localization system (TH/EN) | #6 |
+| PS-4 | Seed queue personalization ranking algorithm | #1 |
+| PS-11 | Database migrations for Phase 1 | Foundation |
+| PS-12 | Create user_profile_signals table for tracking affinity data | #1 |
+| PS-13 | Build career-insights edge function for ikigai calculation | #3 |
+| PS-14 | Connect profile.tsx to real ikigai edge function | #3 |
 
-### Completed Tickets
-- BIG-1: Get familiar with Linear ✓
-- BIG-2: Set up your teams ✓
-- BIG-3: Connect your tools ✓
-- BIG-4: Import your data ✓
+**P2 — Personalization (7 tickets):**
+| ID | Title | Dream State Coverage |
+|----|-------|---------------------|
+| PS-5 | Build exploration gap detection system | #1 |
+| PS-6 | Build reflection trends dashboard | #4 |
+| PS-7 | Add social proof counters to seed cards | #7 |
+| PS-8 | Build university roadmap matching engine | #4 |
+| PS-15 | Implement seed ranking algorithm (affinity + exploration gaps) | #1 |
+| PS-16 | Update discover.tsx to use ranked seed endpoint | #1 |
+| PS-17 | Add exploration gap tracking to profile signals | #1 |
+
+**P3 — Expert/Social Layer (2 tickets):**
+| ID | Title | Dream State Coverage |
+|----|-------|---------------------|
+| PS-9 | AI-assisted PathLab seed generator | #2 |
+| PS-10 | Expert conversation layer (chat with expert avatar) | #5 |
 
 ---
 
 ## 12-Month Dream State Coverage
 
-| # | Dream State Item | Ticket Coverage | Status |
-|---|------------------|-----------------|--------|
-| 1 | Personalized seed queue (profile affinity + exploration gaps) | BIG-42 (P1), BIG-39 (P1) | ✓ Covered |
-| 2 | AI-assisted PathLab generation (expert interview → seed) | BIG-44 (P1) | ✓ Covered |
-| 3 | Real ikigai from reflection data | BIG-41 (P1), BIG-40 (P1) | ✓ Covered |
-| 4 | Reflection trends → Direction Finder | BIG-40 (P1), BIG-43 (P2) | ✓ Covered |
-| 5 | Expert conversation layer | BIG-46 (P2) | ✓ Covered |
-| 6 | Thai/English localization | BIG-45 (P1) | ✓ Covered |
-| 7 | Social proof (cohort comparison) | BIG-47 (P2) | ✓ Covered |
+| # | Dream State Item | Canonical Ticket(s) | Status |
+|---|------------------|---------------------|--------|
+| 1 | Personalized seed queue (profile affinity + exploration gaps) | PS-2, PS-4, PS-12, PS-15, PS-16, PS-17 | ✓ Covered |
+| 2 | AI-assisted PathLab generation (expert interview → seed) | PS-9 | ✓ Covered |
+| 3 | Real ikigai from reflection data | PS-1, PS-13, PS-14 | ✓ Covered |
+| 4 | Reflection trends → Direction Finder | PS-6, PS-8 | ✓ Covered |
+| 5 | Expert conversation layer | PS-10 | ✓ Covered |
+| 6 | Thai/English localization | PS-3 | ✓ Covered |
+| 7 | Social proof (cohort comparison) | PS-7 | ✓ Covered |
 
-**Verdict:** All dream state items have tickets. No new tickets needed for coverage.
+**Verdict:** All 7 dream state items have tickets. No new tickets needed.
 
 ---
 
