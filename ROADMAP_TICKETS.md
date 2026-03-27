@@ -1,8 +1,8 @@
 # Passion Seed Mobile - 12-Month Roadmap Tickets
 
 **Generated:** 2026-03-28
-**Updated:** 2026-03-28 04:37 (cron job - verified Linear state, no changes needed, all dream state items covered)
-**Team:** PS (Passion Seed Main) - ID: ace4cb8d-f6ff-435f-addb-7c72fe45dd48
+**Updated:** 2026-03-28 05:10 (cron job - verified Linear state, backlog cleanup prioritized)
+**Team:** PS (Passion Seed Main) - ID: cf511658-c0c8-408e-85d7-c8f25d357366
 **Linear:** https://linear.app/passionseed/ps
 **Context:** Gap analysis between current app state and 12-month dream state
 
@@ -19,22 +19,28 @@
 - Onboarding flow
 - Push notification infrastructure
 
-❌ **Dream state gaps:**
-1. No personalized seed ranking → **PS-4 created**
-2. No AI-assisted PathLab generation → **PS-9 created**
-3. Ikigai is mock data, not from reflections → **PS-1 created**
-4. No reflection trends/insights → **PS-6 created**
-5. No expert conversation layer → **PS-10 created**
-6. Limited Thai localization → **PS-3 created**
-7. No social proof counters → **PS-7 created**
+✅ **Dream state coverage:** All 7 dream state features have tickets (no gaps)
 
-**Linear Status (2026-03-28 03:30):**
-- PS team: `ace4cb8d-f6ff-435f-addb-7c72fe45dd48`
-- 17 open tickets (PS-1 through PS-17), all in Backlog
-- P1 (Foundation): PS-1, PS-2, PS-3, PS-4, PS-11, PS-12, PS-13, PS-14 (8 tickets)
-- P2 (Personalization): PS-5, PS-6, PS-7, PS-8, PS-15, PS-16, PS-17 (7 tickets)
-- P3 (Expert/Social): PS-9, PS-10 (2 tickets)
-- Big team: 0 open issues (all completed/migrated to PS team)
+**Linear Status (2026-03-28 05:10):**
+- PS team: `cf511658-c0c8-408e-85d7-c8f25d357366`
+- **48 total issues** (45 open, 3 done)
+- **State breakdown:** Backlog: 42, In Progress: 1 (PS-31), Todo: 2, Done: 3
+- **Priority breakdown:** P0 (unset): 44, P1 (High): 2, P2 (Medium): 2
+
+⚠️ **Backlog Health Issue:** 9 duplicate groups identified:
+| Feature | Duplicate Tickets |
+|---------|------------------|
+| Seed ranking algorithm | PS-49, PS-30 |
+| Thai/English localization | PS-43, PS-27, PS-15 |
+| Parent willingness validation | PS-39, PS-37, PS-7 |
+| Expert conversation layer | PS-42, PS-38, PS-36 |
+| Request path for Pathlab | PS-34, PS-10, PS-8 |
+| Social proof features | PS-26, PS-14 |
+| Profile reveal UI | PS-22, PS-11 |
+| Seed velocity analytics | PS-21, PS-13 |
+| Offline content caching | PS-19, PS-12 |
+
+**Key ticket:** PS-51 "[Foundation] Deduplicate and prioritize backlog tickets" (P2) — should be P1
 
 ---
 
