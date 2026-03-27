@@ -1,8 +1,9 @@
 # Passion Seed Mobile - 12-Month Roadmap Tickets
 
 **Generated:** 2026-03-28
-**Updated:** 2026-03-28 (cron job - added PS-50, PS-51, PS-52)
-**Team:** PS (Passion Seed Main)
+**Updated:** 2026-03-28 (cron job - created PS team + PS-1 through PS-10 in Linear)
+**Team:** PS (Passion Seed Main) - ID: ace4cb8d-f6ff-435f-addb-7c72fe45dd48
+**Linear:** https://linear.app/passionseed/ps
 **Context:** Gap analysis between current app state and 12-month dream state
 
 ---
@@ -19,13 +20,20 @@
 - Push notification infrastructure
 
 ❌ **Dream state gaps:**
-1. No personalized seed ranking
-2. No AI-assisted PathLab generation
-3. Ikigai is mock data, not from reflections
-4. No reflection trends/insights
-5. No expert conversation layer
-6. Limited Thai localization
-7. No social proof counters
+1. No personalized seed ranking → **PS-4 created**
+2. No AI-assisted PathLab generation → **PS-9 created**
+3. Ikigai is mock data, not from reflections → **PS-1 created**
+4. No reflection trends/insights → **PS-6 created**
+5. No expert conversation layer → **PS-10 created**
+6. Limited Thai localization → **PS-3 created**
+7. No social proof counters → **PS-7 created**
+
+**Linear Status (2026-03-28):**
+- PS team created: `ace4cb8d-f6ff-435f-addb-7c72fe45dd48`
+- 10 tickets created (PS-1 through PS-10), all in Backlog
+- Priority 1 (P1): PS-1, PS-2, PS-3, PS-4 (Foundation)
+- Priority 2 (P2): PS-5, PS-6, PS-7, PS-8 (Personalization)
+- Priority 3 (P3): PS-9, PS-10 (Expert/Social Layer)
 
 ---
 
@@ -294,34 +302,54 @@ CREATE TABLE expert_chats (
 
 ## Cron Job Updates
 
-### 2026-03-28: Initial backlog analysis
+### 2026-03-28: PS Team + Foundation Tickets Created
+
+**Actions completed:**
+- Created PS team in Linear (ID: `ace4cb8d-f6ff-435f-addb-7c72fe45dd48`)
+- Created 10 tickets (PS-1 through PS-10) covering all 7 dream state gaps
+- Updated ROADMAP_TICKETS.md with Linear links and status
 
 **New tickets created:**
-- **PS-50**: [Data] Build university roadmap matching engine (P1)
-- **PS-51**: [Foundation] Deduplicate and prioritize backlog tickets (P2)
-- **PS-52**: [Data] Create ikigai_snapshots table for historical tracking (P1)
+| ID | Title | Priority | Phase |
+|----|-------|----------|-------|
+| PS-1 | Implement real Ikigai calculation from reflection data | P1 | Foundation |
+| PS-2 | Add profile affinity scoring to seed ranking | P1 | Foundation |
+| PS-3 | Create seed content localization system (TH/EN) | P1 | Foundation |
+| PS-4 | Seed queue personalization ranking algorithm | P1 | Foundation |
+| PS-5 | Build exploration gap detection system | P2 | Personalization |
+| PS-6 | Build reflection trends dashboard | P2 | Personalization |
+| PS-7 | Add social proof counters to seed cards | P2 | Personalization |
+| PS-8 | Build university roadmap matching engine | P2 | Personalization |
+| PS-9 | AI-assisted PathLab seed generator | P3 | Expert Layer |
+| PS-10 | Expert conversation layer (chat with expert avatar) | P3 | Expert Layer |
 
 **Current state summary:**
-- **Total issues:** 52
-- **Done:** 3 (PS-33 app init, PS-18 reflection UI, PS-16 onboarding)
-- **In Progress:** 1 (PS-31 profile signals schema)
-- **Todo:** 5 (mostly setup tasks)
-- **Backlog:** 43 (includes duplicates to be cleaned up via PS-51)
+- **Total PS issues:** 10
+- **Done:** 0
+- **In Progress:** 0
+- **Todo:** 0
+- **Backlog:** 10
 
 **Dream state coverage:**
 | Feature | Canonical Ticket | Status |
 |---------|-----------------|--------|
-| Personalized seed queue | PS-49 | Backlog |
-| AI PathLab generation | PS-44 | Backlog |
-| Real ikigai calculation | PS-46 | Backlog |
-| Reflection trends → Direction Finder | PS-45 | Backlog |
-| Expert conversation layer | PS-42 | Backlog |
-| Thai/English localization | PS-43 | Backlog |
-| Social proof counters | PS-41 | Backlog |
-| University roadmap matching | PS-50 | **New** |
-| Historical ikigai tracking | PS-52 | **New** |
+| Personalized seed queue | PS-4 | ✅ Created |
+| AI PathLab generation | PS-9 | ✅ Created |
+| Real ikigai calculation | PS-1 | ✅ Created |
+| Reflection trends → Direction Finder | PS-6 | ✅ Created |
+| Expert conversation layer | PS-10 | ✅ Created |
+| Thai/English localization | PS-3 | ✅ Created |
+| Social proof counters | PS-7 | ✅ Created |
+| Exploration gap detection | PS-5 | ✅ Created |
+| University roadmap matching | PS-8 | ✅ Created |
 
 **Next actions:**
-1. Complete PS-31 (profile signals schema) - currently In Progress
-2. Start PS-51 to clean up duplicate tickets
-3. Begin Phase 1 foundation work (PS-46, PS-43, PS-49)
+1. Start Phase 1 foundation work (PS-1 Ikigai → PS-3 Localization → PS-2 Affinity)
+2. Set up database migrations for new tables (ikigai_snapshots, localization columns)
+3. Begin PS-1 implementation (highest priority - unblocks profile personalization)
+
+---
+
+### 2026-03-28: Initial backlog analysis (superseded)
+
+**Note:** This initial analysis was replaced by the PS team creation above. Previous ticket numbers (PS-41 through PS-52) were from a different team/workspace and have been consolidated into PS-1 through PS-10.
