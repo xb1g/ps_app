@@ -1,6 +1,7 @@
 # Passion Seed Mobile - 12-Month Roadmap Tickets
 
 **Generated:** 2026-03-28
+**Updated:** 2026-03-28 (cron job - added PS-50, PS-51, PS-52)
 **Team:** PS (Passion Seed Main)
 **Context:** Gap analysis between current app state and 12-month dream state
 
@@ -288,3 +289,39 @@ CREATE TABLE expert_chats (
   created_at TIMESTAMPTZ
 );
 ```
+
+---
+
+## Cron Job Updates
+
+### 2026-03-28: Initial backlog analysis
+
+**New tickets created:**
+- **PS-50**: [Data] Build university roadmap matching engine (P1)
+- **PS-51**: [Foundation] Deduplicate and prioritize backlog tickets (P2)
+- **PS-52**: [Data] Create ikigai_snapshots table for historical tracking (P1)
+
+**Current state summary:**
+- **Total issues:** 52
+- **Done:** 3 (PS-33 app init, PS-18 reflection UI, PS-16 onboarding)
+- **In Progress:** 1 (PS-31 profile signals schema)
+- **Todo:** 5 (mostly setup tasks)
+- **Backlog:** 43 (includes duplicates to be cleaned up via PS-51)
+
+**Dream state coverage:**
+| Feature | Canonical Ticket | Status |
+|---------|-----------------|--------|
+| Personalized seed queue | PS-49 | Backlog |
+| AI PathLab generation | PS-44 | Backlog |
+| Real ikigai calculation | PS-46 | Backlog |
+| Reflection trends → Direction Finder | PS-45 | Backlog |
+| Expert conversation layer | PS-42 | Backlog |
+| Thai/English localization | PS-43 | Backlog |
+| Social proof counters | PS-41 | Backlog |
+| University roadmap matching | PS-50 | **New** |
+| Historical ikigai tracking | PS-52 | **New** |
+
+**Next actions:**
+1. Complete PS-31 (profile signals schema) - currently In Progress
+2. Start PS-51 to clean up duplicate tickets
+3. Begin Phase 1 foundation work (PS-46, PS-43, PS-49)
