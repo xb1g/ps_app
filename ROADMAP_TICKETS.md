@@ -30,8 +30,8 @@
 
 **Linear Status (2026-03-28):**
 - PS team created: `ace4cb8d-f6ff-435f-addb-7c72fe45dd48`
-- 10 tickets created (PS-1 through PS-10), all in Backlog
-- Priority 1 (P1): PS-1, PS-2, PS-3, PS-4 (Foundation)
+- 11 tickets created (PS-1 through PS-11), all in Backlog
+- Priority 1 (P1): PS-1, PS-2, PS-3, PS-4, PS-11 (Foundation)
 - Priority 2 (P2): PS-5, PS-6, PS-7, PS-8 (Personalization)
 - Priority 3 (P3): PS-9, PS-10 (Expert/Social Layer)
 
@@ -322,13 +322,14 @@ CREATE TABLE expert_chats (
 | PS-8 | Build university roadmap matching engine | P2 | Personalization |
 | PS-9 | AI-assisted PathLab seed generator | P3 | Expert Layer |
 | PS-10 | Expert conversation layer (chat with expert avatar) | P3 | Expert Layer |
+| PS-11 | Database migrations for Phase 1 (ikigai, localization, social proof) | P1 | Foundation |
 
 **Current state summary:**
-- **Total PS issues:** 10
+- **Total PS issues:** 11
 - **Done:** 0
 - **In Progress:** 0
 - **Todo:** 0
-- **Backlog:** 10
+- **Backlog:** 11
 
 **Dream state coverage:**
 | Feature | Canonical Ticket | Status |
@@ -342,11 +343,13 @@ CREATE TABLE expert_chats (
 | Social proof counters | PS-7 | ✅ Created |
 | Exploration gap detection | PS-5 | ✅ Created |
 | University roadmap matching | PS-8 | ✅ Created |
+| Database foundation (migrations) | PS-11 | ✅ Created |
 
 **Next actions:**
-1. Start Phase 1 foundation work (PS-1 Ikigai → PS-3 Localization → PS-2 Affinity)
-2. Set up database migrations for new tables (ikigai_snapshots, localization columns)
-3. Begin PS-1 implementation (highest priority - unblocks profile personalization)
+1. **START HERE: PS-11** — Database migrations (blocks PS-1, PS-2, PS-3, PS-7)
+2. PS-1: Ikigai calculation (first personalization feature)
+3. PS-3: Thai localization (critical for Thai students)
+4. PS-2: Affinity scoring (personalized discover queue)
 
 ---
 
