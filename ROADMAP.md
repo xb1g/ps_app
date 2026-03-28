@@ -141,6 +141,21 @@
 
 ## Changelog
 
+### March 28, 2026 - PM
+
+**Duplicate Cleanup:** Identified and marked 9 duplicate tickets with comments pointing to canonical versions:
+- PS-77 → PS-51 (Expert interview pipeline)
+- PS-78 → PS-54 (Localization system)
+- PS-73 → PS-45 (Seed ranking display)
+- PS-70 → PS-44 (Ikigai visualization)
+- PS-68 → PS-37 (Profile onboarding)
+- PS-76 → PS-52 (Direction Finder)
+- PS-79 → PS-60 (E2E testing)
+- PS-80 → PS-62 (Sentry)
+- PS-67 → PS-53 (RLS policies)
+
+**Total active backlog:** 50 tickets → 41 unique after deduplication
+
 ### March 28, 2026 - Ticket Creation Sprint
 
 Created 20 new tickets to close gaps between current state and 12-month dream:
