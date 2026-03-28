@@ -143,7 +143,7 @@
 
 ### March 28, 2026 - Ticket Creation Sprint
 
-Created 16 new tickets to close gaps between current state and 12-month dream:
+Created 20 new tickets to close gaps between current state and 12-month dream:
 
 **Phase 1 MVP Foundation (8 tickets):**
 - PS-67: RLS policies for user data isolation [Urgent]
@@ -161,10 +161,16 @@ Created 16 new tickets to close gaps between current state and 12-month dream:
 - PS-77: Expert interview → seed content pipeline [Medium]
 - PS-78: Thai/English localization system [High]
 
-**Infrastructure (2 tickets):**
+**Infrastructure (4 tickets):**
 - PS-79: E2E testing infrastructure with Detox [High]
 - PS-80: Sentry error monitoring integration [High]
+- PS-83: [Phase 1] MVP Launch Readiness Checklist [Urgent]
+- PS-84: Push notification integration for daily seed reminders [High]
+- PS-85: GPU model serving monitoring dashboard [Medium]
 
 **Phase 3 Social & Expert Layers (2 tickets):**
 - PS-81: Expert conversation layer (RAG chatbot) [Medium]
 - PS-82: Cohort comparison analytics for social proof [Medium]
+
+**Analytics (1 ticket):**
+- PS-86: Seed quality scorecard and content iteration workflow [Medium]
