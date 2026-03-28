@@ -141,20 +141,37 @@
 
 ## Changelog
 
-### March 28, 2026 - PM
+### March 28, 2026 - PM (Cron Job)
 
-**Duplicate Cleanup:** Identified and marked 9 duplicate tickets with comments pointing to canonical versions:
-- PS-77 → PS-51 (Expert interview pipeline)
-- PS-78 → PS-54 (Localization system)
-- PS-73 → PS-45 (Seed ranking display)
-- PS-70 → PS-44 (Ikigai visualization)
-- PS-68 → PS-37 (Profile onboarding)
-- PS-76 → PS-52 (Direction Finder)
-- PS-79 → PS-60 (E2E testing)
-- PS-80 → PS-62 (Sentry)
-- PS-67 → PS-53 (RLS policies)
+**Duplicate Cleanup Complete:** Marked 14 duplicate tickets and moved to "Duplicate" state:
 
-**Total active backlog:** 50 tickets → 41 unique after deduplication
+| Duplicate | Canonical | Topic |
+|-----------|-----------|-------|
+| PS-67 | PS-53 | RLS policies |
+| PS-68 | PS-37 | Profile onboarding |
+| PS-69 | PS-48 | Seed completion UI |
+| PS-70 | PS-44 | Ikigai visualization |
+| PS-73 | PS-45 | Seed ranking display |
+| PS-74 | PS-47 | Portfolio-fit edge fn |
+| PS-76 | PS-52 | Direction Finder |
+| PS-77 | PS-51 | Expert interview pipeline |
+| PS-78 | PS-54 | Localization |
+| PS-79 | PS-60 | E2E testing |
+| PS-80 | PS-62 | Sentry |
+| PS-42 | PS-53 | RLS (older duplicate) |
+| PS-39 | PS-54 | Localization (older) |
+| PS-40 | PS-82 | Cohort segmentation |
+
+**Total active backlog:** 50 tickets → 36 unique after deduplication
+
+**Dream State Coverage:** All 7 dream state features are now covered by active tickets:
+1. ✅ Personalized seed queue — PS-72 (algorithm), PS-45 (display), PS-47 (portfolio-fit)
+2. ✅ AI-assisted PathLab — PS-51 (expert→seed), PS-65 (GPU serving)
+3. ✅ Real ikigai — PS-43 (calculation), PS-44 (visualization), PS-71 (integration)
+4. ✅ Reflection trends → Direction Finder — PS-75 (trends), PS-52 (Direction Finder)
+5. ✅ Expert conversation — PS-81 (RAG chatbot)
+6. ✅ Localization — PS-54 (i18n system)
+7. ✅ Social proof — PS-82 (cohort comparison)
 
 ### March 28, 2026 - Ticket Creation Sprint
 
