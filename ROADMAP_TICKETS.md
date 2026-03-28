@@ -1,9 +1,9 @@
 # Passion Seed Mobile - 12-Month Roadmap Tickets
 
 **Generated:** 2026-03-28
-**Updated:** 2026-03-28 06:19 (cron job — gap analysis complete, 5 infrastructure tickets created)
-**Team:** PS (Passion Seed) — ID: ace4cb8d-f6ff-435f-addb-7c72fe45dd48
-**Linear:** https://linear.app/passionseed/ps
+**Updated:** 2026-03-28 09:30 (cron — backlog consolidated, 8 new tickets PS-53 to PS-60)
+**Team:** PS (Passion Seed) — ID: cf511658-c0c8-408e-85d7-c8f25d357366
+**Linear:** https://linear.app/bigf/ps
 **Context:** Gap analysis between current app state and 12-month dream state
 
 ---
@@ -457,6 +457,43 @@ CREATE TABLE expert_chats (
 - [ ] Calculate: completion rate, university continuation, skill mastery, time to completion
 - [ ] Display on seed detail: "85% of completers felt more confident"
 - [ ] "Students like you" section with similar profile filtering
+
+---
+
+### 2026-03-28 09:30: Backlog Consolidation (PS-53 to PS-60)
+
+**Problem:** 50 tickets in Linear, many duplicates covering the same 7 dream state features.
+
+**Actions completed:**
+- Queried Linear API: found 50 issues (PS-1 through PS-52)
+- Identified duplicate clusters (e.g., 3 tickets for expert conversation, 3 for localization)
+- Created 8 consolidated tickets to reduce fragmentation
+
+**New tickets created:**
+| ID | Title | Priority | Consolidates |
+|----|-------|----------|--------------|
+| PS-53 | [Foundation] Complete profile signals implementation and validation | P0 | PS-48, PS-31 |
+| PS-54 | [Data Pipeline] Build reflection → ikigai → Direction Finder flow | P0 | PS-47, PS-46, PS-45, PS-50 |
+| PS-55 | [AI] Implement seed ranking algorithm with exploration gap detection | P1 | PS-49, PS-30 |
+| PS-56 | [PathLab] Build expert interview → seed generation pipeline | P1 | PS-44, PS-29, PS-34, PS-10, PS-8 |
+| PS-57 | [Mobile] Seed queue UI with ranking display | P1 | PS-32, PS-19, PS-12 |
+| PS-58 | [Social] Add cohort comparison and social proof | P2 | PS-41, PS-26, PS-14, PS-40, PS-21, PS-13 |
+| PS-59 | [Expert] Build expert conversation layer | P2 | PS-42, PS-38, PS-36 |
+| PS-60 | [i18n] Thai/English localization system | P2 | PS-43, PS-27, PS-15 |
+
+**Current state:**
+- **Total PS issues:** 58 (PS-1 through PS-60)
+- **Done:** 3 (PS-33, PS-18, PS-16 — app init, reflection UI, onboarding)
+- **In Progress:** 1 (PS-31 — profile signals)
+- **Backlog:** 54
+
+**Critical path (updated):**
+1. **PS-53** — Complete profile signals (PS-31 already in progress)
+2. **PS-54** — Data pipeline (ikigai → Direction Finder)
+3. **PS-55** — Seed ranking algorithm
+4. **PS-57** — Mobile seed queue UI
+
+**Next cron action:** Close duplicate tickets (PS-34/10/8, PS-42/38/36, PS-43/27/15, etc.) in favor of PS-53 to PS-60.
 
 ---
 

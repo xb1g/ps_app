@@ -1,6 +1,6 @@
 # Passion Seed Mobile App - 12-Month Roadmap
 
-**Last updated:** March 28, 2026 08:42 (cron verification — no gaps, 33 tickets cover all 7 dream state items)  
+**Last updated:** March 28, 2026 09:30 (cron — backlog consolidated, 8 new tickets PS-53 to PS-60)  
 **GitHub:** https://github.com/Ongpaoaa/ps_app  
 **Linear:** PS team (https://linear.app/bigf/PS)
 
@@ -8,9 +8,14 @@
 
 ## Current State Summary
 
-**Total open tickets:** 33 (PS-1 through PS-33)  
+**Total open tickets:** 58 (PS-1 through PS-60, some duplicates consolidated)  
 **All tickets in:** Backlog  
-**Phase 1 ready to start:** Yes (PS-11 → PS-12 → PS-23)
+**Phase 1 ready to start:** Yes (PS-53 → PS-54 → PS-55)
+
+### Today's Actions (2026-03-28 09:30)
+- Queried Linear: found 50 existing tickets (many duplicates)
+- Created 8 consolidated tickets (PS-53 to PS-60) to reduce fragmentation
+- All 7 dream state features now have clear ownership tickets
 
 ### What Exists Today
 - ✅ Edge functions: career-insights, portfolio-fit, score-engine, push-notifications, university-insights
@@ -180,8 +185,32 @@ PS-26 → PS-27 (expert chatbot RAG)
 
 ---
 
+## Consolidated Tickets (2026-03-28)
+
+**8 new tickets created to reduce backlog fragmentation:**
+
+| Ticket | Title | Priority | Consolidates |
+|--------|-------|----------|--------------|
+| PS-53 | [Foundation] Complete profile signals implementation and validation | P0 | PS-48, PS-31 |
+| PS-54 | [Data Pipeline] Build reflection → ikigai → Direction Finder flow | P0 | PS-47, PS-46, PS-45, PS-50 |
+| PS-55 | [AI] Implement seed ranking algorithm with exploration gap detection | P1 | PS-49, PS-30 |
+| PS-56 | [PathLab] Build expert interview → seed generation pipeline | P1 | PS-44, PS-29, PS-34, PS-10, PS-8 |
+| PS-57 | [Mobile] Seed queue UI with ranking display | P1 | PS-32, PS-19, PS-12 |
+| PS-58 | [Social] Add cohort comparison and social proof | P2 | PS-41, PS-26, PS-14, PS-40, PS-21, PS-13 |
+| PS-59 | [Expert] Build expert conversation layer | P2 | PS-42, PS-38, PS-36 |
+| PS-60 | [i18n] Thai/English localization system | P2 | PS-43, PS-27, PS-15 |
+
+**Next actions:**
+1. **PS-53** — Complete profile signals (already in progress as PS-31)
+2. **PS-54** — Build end-to-end data pipeline
+3. **PS-55** — Seed ranking algorithm
+4. **PS-57** — Mobile UI for personalized queue
+
+---
+
 ## Notes
 
 - All tickets currently in Backlog state
 - Priority should be re-evaluated before starting each phase
 - Consider batching Phase 1 tickets into sprints of 3-4 tickets each
+- Duplicates should be closed in favor of PS-53 through PS-60
