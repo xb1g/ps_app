@@ -1,40 +1,8 @@
-# Passion Seed Mobile App - 12-Month Roadmap
+# Passion Seed Mobile App - Product Roadmap
 
-**Last updated:** March 28, 2026 10:21 (cron — Sprint 1 execution tickets PS-41 to PS-45)  
+**Last updated:** March 28, 2026  
 **GitHub:** https://github.com/Ongpaoaa/ps_app  
-**Linear:** PS team (https://linear.app/bigf/PS)
-
----
-
-## Current State Summary
-
-**Total open tickets:** 45 (PS-1 through PS-45)  
-**All tickets in:** Backlog  
-**Phase 1 ready to start:** Yes (PS-41 sprint kickoff → PS-42/PS-43/PS-37)
-
-### Today's Actions (2026-03-28 10:21)
-- Queried Linear: 40 existing tickets (PS-1 through PS-40)
-- Created 5 Sprint 1 execution tickets (PS-41 to PS-45)
-- PS-41: Sprint 1 kickoff (organizes Phase 1 foundation work)
-- PS-42: Supabase user_profile_signals table schema
-- PS-43: Reflection → Ikigai calculation pipeline
-- PS-44: IkigaiChart.tsx component for Profile screen
-- PS-45: Seed ranking display in Discover screen
-
-### What Exists Today
-- ✅ Edge functions: career-insights, portfolio-fit, score-engine, push-notifications, university-insights
-- ✅ Core screens: seed, path, reflection, portfolio, university, career, fit
-- ✅ Database schema: seeds, paths, path_days, path_enrollments, path_reflections, learning_maps, map_nodes, jobs, tcas_programs
-
-### What's Missing (Dream State Gaps)
-- ❌ user_profile_signals table for affinity tracking
-- ❌ Seed ranking algorithm (affinity + exploration gaps)
-- ❌ Ikigai calculation from reflection data
-- ❌ Reflection trends aggregation
-- ❌ Content localization system (TH/EN)
-- ❌ Social proof counters and cohort comparisons
-- ❌ AI PathLab seed generator
-- ❌ Expert conversation layer (RAG chatbot)
+**Linear:** PS team (tickets PS-XX)
 
 ---
 
@@ -44,206 +12,127 @@
 2. **AI-assisted PathLab generation** (expert interview → seed in 1 hour)
 3. **Real ikigai** derived from reflection data across all completed seeds
 4. **Reflection trends** feed Direction Finder and university roadmap match
-5. **Expert conversation layer** (student can "talk" to the expert via RAG chatbot)
+5. **Expert conversation layer** (student can "talk" to the expert)
 6. **Fully localized seed content** (Thai/English)
-7. **Social proof**: "N students tried this path" + cohort comparison analytics
+7. **Social proof**: "N students tried this path" + cohort comparison
 
 ---
 
-## Phase 1: Foundation (Q2 2026)
+## Phase 1: MVP Foundation (Sprint 1-3)
 
-**Goal:** Enable personalization by collecting profile signals and building core ranking
+**Goal:** Ship core loop with basic personalization
 
-### Priority Tickets
+### Data Layer
+- [x] PS-42: user_profile_signals table schema
+- [x] PS-38: Reflection data model and aggregation schema
+- [x] PS-83: Seed completion tracking and user progress aggregation
+- [ ] PS-53: RLS policies for user data isolation
 
-| Ticket | Title | Priority | Status |
-|--------|-------|----------|--------|
-| PS-23 | Phase 1 Foundation: Profile signals data collection layer | High | Backlog |
-| PS-24 | Phase 1: Seed ranking edge function (affinity + exploration gaps) | High | Backlog |
-| PS-25 | Phase 1: Ikigai edge function MVP | High | Backlog |
-| PS-28 | Phase 1: Reflection trends → Direction Finder integration | Medium | Backlog |
+### Core Features
+- [ ] PS-37: User onboarding flow for profile signals collection
+- [ ] PS-48: Seed completion tracking UI and progress indicators
+- [ ] PS-44: Ikigai visualization component for Profile screen
+- [ ] PS-14: Connect profile.tsx to real ikigai edge function
 
-### Supporting Tickets
+### Personalization
+- [ ] PS-15: Seed ranking algorithm (affinity + exploration gaps)
+- [ ] PS-45: Seed ranking display in Discover screen
+- [ ] PS-47: portfolio-fit edge function for seed → user matching
 
-| Ticket | Title | Priority |
-|--------|-------|----------|
-| PS-11 | Database migrations for Phase 1 (ikigai, localization, social proof) | High |
-| PS-12 | Create user_profile_signals table for tracking affinity data | High |
-| PS-13 | Build career-insights edge function for ikigai calculation | High |
-| PS-1 | Implement real Ikigai calculation from reflection data | High |
-| PS-2 | Add profile affinity scoring to seed ranking | High |
-| PS-3 | Create seed content localization system (TH/EN) | High |
-| PS-5 | Build exploration gap detection system | Medium |
-| PS-15 | Implement seed ranking algorithm (affinity + exploration gaps) | High |
-| PS-17 | Add exploration gap tracking to profile signals | Medium |
-| PS-32 | Add ikigai visualization to Profile screen | Medium |
-
-### Dependencies
-
-```
-PS-11 (migrations) → PS-12 (profile_signals table) → PS-23 (data collection)
-                                                  → PS-24 (ranking function)
-PS-11 → PS-13 (ikigai function) → PS-25 (ikigai MVP) → PS-14 (profile.tsx)
-PS-25 → PS-21 (Direction Finder) → PS-28 (integration)
-PS-24 → PS-16 (discover.tsx update)
-```
+### Infrastructure
+- [ ] PS-58: MVP Scope Definition and Prioritization *(new)*
+- [ ] PS-60: E2E testing infrastructure with Detox *(new)*
+- [ ] PS-62: Error monitoring with Sentry integration *(new)*
+- [ ] PS-54: Thai/English localization system
 
 ---
 
-## Phase 2: AI & Expert Layer (Q3 2026)
+## Phase 2: Intelligence & Insights (Sprint 4-6)
 
-**Goal:** Automate content creation and enable expert conversations
+**Goal:** Add AI-powered features and analytics
 
-### Priority Tickets
+### Analytics
+- [ ] PS-55: Track seed velocity and Direction Finder readiness
+- [ ] PS-61: Dashboard for seed velocity and completion funnel *(new)*
+- [ ] PS-29: Reflection trends aggregation pipeline
+- [ ] PS-28: Reflection trends → Direction Finder integration
 
-| Ticket | Title | Priority | Status |
-|--------|-------|----------|--------|
-| PS-26 | Phase 2: AI PathLab seed generator pipeline | Medium | Backlog |
-| PS-27 | Phase 2: Expert conversation layer (RAG chatbot) | Low | Backlog |
+### Advanced Features
+- [ ] PS-52: Direction Finder screen with university roadmap integration
+- [ ] PS-25: Ikigai edge function MVP
+- [ ] PS-24: Seed ranking edge function (affinity + exploration gaps)
 
-### Supporting Tickets
-
-| Ticket | Title | Priority |
-|--------|-------|----------|
-| PS-9 | AI-assisted PathLab seed generator | Low |
-| PS-10 | Expert conversation layer (chat with expert avatar) | Low |
-| PS-3 | Create seed content localization system (TH/EN) | High |
-| PS-31 | Build content localization workflow for expert contributors | High |
-
-### Dependencies
-
-```
-PS-3 (localization) → PS-26 (PathLab pipeline)
-PS-26 → PS-27 (expert chatbot RAG)
-```
+### Content Pipeline
+- [ ] PS-51: Expert interview → seed content pipeline
+- [ ] PS-59: Seed creator CMS for expert contributors *(new)*
 
 ---
 
-## Phase 3: Social & Analytics (Q4 2026)
+## Phase 3: Social & Expert Layers (Sprint 7-12)
 
-**Goal:** Add social proof and cohort insights
+**Goal:** Build community and expert engagement
 
-### Supporting Tickets
-
-| Ticket | Title | Priority |
-|--------|-------|----------|
-| PS-6 | Build reflection trends dashboard | Medium |
-| PS-7 | Add social proof counters to seed cards | Medium |
-| PS-8 | Build university roadmap matching engine | Medium |
-| PS-21 | Build Direction Finder recommendation algorithm | Medium |
-| PS-22 | Build cohort comparison analytics for social proof | Low |
-| PS-29 | Build reflection trends aggregation pipeline (daily/weekly/monthly) | Medium |
-| PS-30 | Define cohort segmentation logic for social proof | Medium |
+- [ ] PS-27: Expert conversation layer (RAG chatbot)
+- [ ] PS-10: Expert conversation layer (chat with expert avatar)
+- [ ] PS-9: AI-assisted PathLab seed generator
+- [ ] PS-26: AI PathLab seed generator pipeline
+- [ ] PS-22: Cohort comparison analytics for social proof
+- [ ] PS-30: Cohort segmentation logic for social proof
+- [ ] PS-40: Cohort segmentation logic and definitions
 
 ---
 
-## Infrastructure (Ongoing)
+## Infrastructure & Quality
 
-| Ticket | Title | Priority |
-|--------|-------|----------|
-| PS-18 | Build A/B testing infrastructure for feature experiments | Medium |
-| PS-19 | Implement analytics event tracking system | Medium |
-| PS-20 | Build push notification scheduler for daily seed queue refresh | Low |
-| PS-33 | Seed queue A/B test framework integration | Low |
-| PS-34 | [Infra] Edge function deployment and testing pipeline | High |
-| PS-35 | [Infra] Analytics event tracking schema and implementation | High |
-| PS-36 | [Infra] A/B testing framework for feature experiments | Medium |
-| PS-37 | [Mobile] User onboarding flow for profile signals collection | High |
-| PS-38 | [Data] Reflection data model and aggregation schema | High |
-| PS-39 | [Content] Seed content schema for localization | High |
-| PS-40 | [Data] Cohort segmentation logic and definitions | Medium |
+### Testing
+- [ ] PS-60: E2E testing with Detox *(new)*
+- [ ] PS-36: A/B testing framework for feature experiments
+- [ ] PS-18: A/B testing infrastructure
 
----
+### Monitoring
+- [ ] PS-62: Sentry error monitoring *(new)*
+- [ ] PS-35: Analytics event tracking schema
+- [ ] PS-19: Analytics event tracking system
 
-## Ticket Summary
-
-**Total open tickets:** 40 (PS-1 through PS-40)
-
-**By Priority:**
-- High (P1): 17 tickets (PS-1, PS-2, PS-3, PS-11, PS-12, PS-13, PS-14, PS-15, PS-23, PS-24, PS-25, PS-31, PS-34, PS-35, PS-37, PS-38, PS-39)
-- Medium (P2): 17 tickets (PS-4, PS-5, PS-6, PS-7, PS-8, PS-16, PS-17, PS-18, PS-19, PS-21, PS-26, PS-28, PS-29, PS-30, PS-32, PS-36, PS-40)
-- Low (P3): 6 tickets (PS-9, PS-10, PS-20, PS-22, PS-27, PS-33)
-
-**By Phase:**
-- Phase 1 Foundation: 16 tickets (PS-1 through PS-5, PS-11 through PS-17, PS-23 through PS-25, PS-28, PS-29, PS-31, PS-32)
-- Phase 2 AI/Expert: 4 tickets (PS-9, PS-10, PS-26, PS-27)
-- Phase 3 Social: 6 tickets (PS-6, PS-7, PS-8, PS-21, PS-22, PS-30)
-- Infrastructure: 11 tickets (PS-18, PS-19, PS-20, PS-33, PS-34, PS-35, PS-36, PS-37, PS-38, PS-39, PS-40)
+### DevOps
+- [ ] PS-50: Feature flag system for gradual rollouts
+- [ ] PS-34: Edge function deployment and testing pipeline
+- [ ] PS-56: Offline-first seed content caching
 
 ---
 
-## Next Actions
+## Current Sprint: Sprint 1 (Foundation Kickoff)
 
-### Sprint 1 (Week 1-2): Database Foundation
-1. **PS-11** - Database migrations for Phase 1 (unblocks everything)
-2. **PS-12** - Create user_profile_signals table
-3. **PS-31** - Build content localization workflow (parallel, unblocks PathLab)
-4. **PS-34** - Edge function deployment pipeline (parallel, infra readiness)
-5. **PS-35** - Analytics event tracking schema (parallel, measurement foundation)
+**Ticket:** PS-41
 
-### Sprint 2 (Week 3-4): Data Collection
-6. **PS-23** - Profile signals data collection layer
-7. **PS-37** - User onboarding flow for profile signals (depends on PS-12)
-8. **PS-13** - Career-insights edge function for ikigai
-9. **PS-3** - Seed content localization system (TH/EN)
-10. **PS-38** - Reflection data model and aggregation schema
-11. **PS-39** - Seed content schema for localization
+### Priority Focus
+1. **Profile signals collection** - PS-23, PS-37
+2. **Ikigai calculation** - PS-13, PS-25, PS-43
+3. **Seed ranking** - PS-15, PS-24
+4. **Localization** - PS-54, PS-39
 
-### Sprint 3 (Week 5-6): Core Algorithms
-12. **PS-24** - Seed ranking edge function
-13. **PS-25** - Ikigai edge function MVP
-14. **PS-15** - Seed ranking algorithm implementation
-
-### Parallel Tracks
-- **PS-29** - Reflection trends aggregation (can start after PS-23, PS-38)
-- **PS-30** - Cohort segmentation spec (can start anytime)
-- **PS-40** - Cohort segmentation logic (can start anytime)
-- **PS-32** - Ikigai visualization (depends on PS-25)
-- **PS-36** - A/B testing framework (can start after PS-35)
+### Blockers
+- Need MVP scope definition (PS-58) before sprint planning
+- Need testing infrastructure (PS-60) for confident shipping
+- Need error monitoring (PS-62) for production readiness
 
 ---
 
-## Consolidated Tickets (2026-03-28)
+## Metrics to Track
 
-**8 new tickets created to reduce backlog fragmentation:**
-
-| Ticket | Title | Priority | Consolidates |
-|--------|-------|----------|--------------|
-| PS-53 | [Foundation] Complete profile signals implementation and validation | P0 | PS-48, PS-31 |
-| PS-54 | [Data Pipeline] Build reflection → ikigai → Direction Finder flow | P0 | PS-47, PS-46, PS-45, PS-50 |
-| PS-55 | [AI] Implement seed ranking algorithm with exploration gap detection | P1 | PS-49, PS-30 |
-| PS-56 | [PathLab] Build expert interview → seed generation pipeline | P1 | PS-44, PS-29, PS-34, PS-10, PS-8 |
-| PS-57 | [Mobile] Seed queue UI with ranking display | P1 | PS-32, PS-19, PS-12 |
-| PS-58 | [Social] Add cohort comparison and social proof | P2 | PS-41, PS-26, PS-14, PS-40, PS-21, PS-13 |
-| PS-59 | [Expert] Build expert conversation layer | P2 | PS-42, PS-38, PS-36 |
-| PS-60 | [i18n] Thai/English localization system | P2 | PS-43, PS-27, PS-15 |
-
-**Next actions:**
-1. **PS-53** — Complete profile signals (already in progress as PS-31)
-2. **PS-54** — Build end-to-end data pipeline
-3. **PS-55** — Seed ranking algorithm
-4. **PS-57** — Mobile UI for personalized queue
+| Metric | Target | Current |
+|--------|--------|---------|
+| Daily Active Users | 100+ | - |
+| Seed Completion Rate | 60%+ | - |
+| Reflection Completion | 80%+ | - |
+| Time to First Seed | < 5 min | - |
+| Week 1 Retention | 40%+ | - |
 
 ---
 
 ## Notes
 
-- All tickets currently in Backlog state
-- Priority should be re-evaluated before starting each phase
-- Consider batching Phase 1 tickets into sprints of 3-4 tickets each
-
----
-
-## New Tickets Created (2026-03-28 09:46)
-
-**7 infrastructure tickets to fill foundational gaps:**
-
-| Ticket | Title | Priority | Purpose |
-|--------|-------|----------|---------|
-| PS-34 | [Infra] Edge function deployment and testing pipeline | High | CI/CD for Supabase edge functions with automated testing |
-| PS-35 | [Infra] Analytics event tracking schema and implementation | High | Define event schema, tracking hooks, dashboards for DAU/completion/reflection metrics |
-| PS-36 | [Infra] A/B testing framework for feature experiments | Medium | Infrastructure for A/B tests on ranking, UI, notifications |
-| PS-37 | [Mobile] User onboarding flow for profile signals collection | High | First-run experience to collect interests, strengths, values, career curiosities |
-| PS-38 | [Data] Reflection data model and aggregation schema | High | Schema optimized for ikigai calculation and daily/weekly/monthly aggregations |
-| PS-39 | [Content] Seed content schema for localization | High | TH/EN content schema with translation workflow for expert contributors |
-| PS-40 | [Data] Cohort segmentation logic and definitions | Medium | Define cohort segments by school type, region, interests, career goals |
+- All tickets tracked in Linear (PS team)
+- Documentation lives in this repo
+- Shared Supabase with web project (~/dev/pseed)
+- Key edge functions: career-insights, portfolio-fit, score-engine, push-notifications
