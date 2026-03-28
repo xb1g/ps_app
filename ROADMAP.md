@@ -26,24 +26,24 @@
 - [x] PS-42: user_profile_signals table schema
 - [x] PS-38: Reflection data model and aggregation schema
 - [x] PS-83: Seed completion tracking and user progress aggregation
-- [ ] PS-53: RLS policies for user data isolation
+- [ ] PS-67: RLS policies for user data isolation *(new)*
 
 ### Core Features
-- [ ] PS-37: User onboarding flow for profile signals collection
-- [ ] PS-48: Seed completion tracking UI and progress indicators
-- [ ] PS-44: Ikigai visualization component for Profile screen
-- [ ] PS-14: Connect profile.tsx to real ikigai edge function
+- [ ] PS-68: User onboarding flow for profile signals collection *(new)*
+- [ ] PS-69: Seed completion tracking UI and progress indicators *(new)*
+- [ ] PS-70: Ikigai visualization component for Profile screen *(new)*
+- [ ] PS-71: Connect profile.tsx to real ikigai edge function *(new)*
 
 ### Personalization
-- [ ] PS-15: Seed ranking algorithm (affinity + exploration gaps)
-- [ ] PS-45: Seed ranking display in Discover screen
-- [ ] PS-47: portfolio-fit edge function for seed → user matching
+- [ ] PS-72: Seed ranking algorithm (affinity + exploration gaps) *(new)*
+- [ ] PS-73: Seed ranking display in Discover screen *(new)*
+- [ ] PS-74: portfolio-fit edge function for seed → user matching *(new)*
 
 ### Infrastructure
-- [ ] PS-58: MVP Scope Definition and Prioritization *(new)*
-- [ ] PS-60: E2E testing infrastructure with Detox *(new)*
-- [ ] PS-62: Error monitoring with Sentry integration *(new)*
-- [ ] PS-54: Thai/English localization system
+- [ ] PS-58: MVP Scope Definition and Prioritization
+- [ ] PS-79: E2E testing infrastructure with Detox *(new)*
+- [ ] PS-80: Sentry error monitoring integration *(new)*
+- [ ] PS-78: Thai/English localization system *(new)*
 
 ---
 
@@ -53,9 +53,9 @@
 
 ### Analytics
 - [ ] PS-55: Track seed velocity and Direction Finder readiness
-- [ ] PS-61: Dashboard for seed velocity and completion funnel *(new)*
-- [ ] PS-29: Reflection trends aggregation pipeline
-- [ ] PS-28: Reflection trends → Direction Finder integration
+- [ ] PS-61: Dashboard for seed velocity and completion funnel
+- [ ] PS-75: Reflection trends aggregation pipeline *(new)*
+- [ ] PS-76: Direction Finder screen with university roadmap integration *(new)*
 
 ### Advanced Features
 - [ ] PS-52: Direction Finder screen with university roadmap integration
@@ -63,8 +63,8 @@
 - [ ] PS-24: Seed ranking edge function (affinity + exploration gaps)
 
 ### Content Pipeline
-- [ ] PS-51: Expert interview → seed content pipeline
-- [ ] PS-59: Seed creator CMS for expert contributors *(new)*
+- [ ] PS-77: Expert interview → seed content pipeline *(new)*
+- [ ] PS-59: Seed creator CMS for expert contributors
 
 ---
 
@@ -72,11 +72,11 @@
 
 **Goal:** Build community and expert engagement
 
-- [ ] PS-27: Expert conversation layer (RAG chatbot)
+- [ ] PS-81: Expert conversation layer (RAG chatbot) *(new)*
 - [ ] PS-10: Expert conversation layer (chat with expert avatar)
 - [ ] PS-9: AI-assisted PathLab seed generator
 - [ ] PS-26: AI PathLab seed generator pipeline
-- [ ] PS-22: Cohort comparison analytics for social proof
+- [ ] PS-82: Cohort comparison analytics for social proof *(new)*
 - [ ] PS-30: Cohort segmentation logic for social proof
 - [ ] PS-40: Cohort segmentation logic and definitions
 
@@ -106,15 +106,15 @@
 **Ticket:** PS-41
 
 ### Priority Focus
-1. **Profile signals collection** - PS-23, PS-37
-2. **Ikigai calculation** - PS-13, PS-25, PS-43
-3. **Seed ranking** - PS-15, PS-24
-4. **Localization** - PS-54, PS-39
+1. **Profile signals collection** - PS-68 (onboarding), PS-67 (RLS)
+2. **Ikigai calculation** - PS-70 (visualization), PS-71 (integration), PS-74 (edge fn)
+3. **Seed ranking** - PS-72 (algorithm), PS-73 (UI), PS-74 (portfolio-fit)
+4. **Localization** - PS-78 (i18n system)
 
 ### Blockers
 - Need MVP scope definition (PS-58) before sprint planning
-- Need testing infrastructure (PS-60) for confident shipping
-- Need error monitoring (PS-62) for production readiness
+- Need testing infrastructure (PS-79) for confident shipping
+- Need error monitoring (PS-80) for production readiness
 
 ---
 
@@ -136,3 +136,35 @@
 - Documentation lives in this repo
 - Shared Supabase with web project (~/dev/pseed)
 - Key edge functions: career-insights, portfolio-fit, score-engine, push-notifications
+
+---
+
+## Changelog
+
+### March 28, 2026 - Ticket Creation Sprint
+
+Created 16 new tickets to close gaps between current state and 12-month dream:
+
+**Phase 1 MVP Foundation (8 tickets):**
+- PS-67: RLS policies for user data isolation [Urgent]
+- PS-68: User onboarding flow for profile signals collection [Urgent]
+- PS-69: Seed completion tracking UI and progress indicators [High]
+- PS-70: Ikigai visualization component for Profile screen [High]
+- PS-71: Connect profile.tsx to real ikigai edge function [High]
+- PS-72: Seed ranking algorithm (affinity + exploration gaps) [Urgent]
+- PS-73: Seed ranking display in Discover screen [High]
+- PS-74: Portfolio-fit edge function for seed → user matching [Urgent]
+
+**Phase 2 Intelligence & Insights (4 tickets):**
+- PS-75: Reflection trends aggregation pipeline [Medium]
+- PS-76: Direction Finder screen with university roadmap integration [High]
+- PS-77: Expert interview → seed content pipeline [Medium]
+- PS-78: Thai/English localization system [High]
+
+**Infrastructure (2 tickets):**
+- PS-79: E2E testing infrastructure with Detox [High]
+- PS-80: Sentry error monitoring integration [High]
+
+**Phase 3 Social & Expert Layers (2 tickets):**
+- PS-81: Expert conversation layer (RAG chatbot) [Medium]
+- PS-82: Cohort comparison analytics for social proof [Medium]
