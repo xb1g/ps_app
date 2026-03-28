@@ -1,6 +1,6 @@
 # Passion Seed Mobile App - 12-Month Roadmap
 
-**Last updated:** March 28, 2026 09:30 (cron — backlog consolidated, 8 new tickets PS-53 to PS-60)  
+**Last updated:** March 28, 2026 09:46 (cron — 7 new infrastructure tickets PS-34 to PS-40)  
 **GitHub:** https://github.com/Ongpaoaa/ps_app  
 **Linear:** PS team (https://linear.app/bigf/PS)
 
@@ -8,14 +8,14 @@
 
 ## Current State Summary
 
-**Total open tickets:** 58 (PS-1 through PS-60, some duplicates consolidated)  
+**Total open tickets:** 40 (PS-1 through PS-40)  
 **All tickets in:** Backlog  
-**Phase 1 ready to start:** Yes (PS-53 → PS-54 → PS-55)
+**Phase 1 ready to start:** Yes (PS-11 → PS-12 → PS-23)
 
-### Today's Actions (2026-03-28 09:30)
-- Queried Linear: found 50 existing tickets (many duplicates)
-- Created 8 consolidated tickets (PS-53 to PS-60) to reduce fragmentation
-- All 7 dream state features now have clear ownership tickets
+### Today's Actions (2026-03-28 09:46)
+- Queried Linear: found 33 existing tickets (PS-1 through PS-33)
+- Created 7 new infrastructure tickets (PS-34 to PS-40) to fill foundational gaps
+- All 7 dream state features have coverage tickets
 
 ### What Exists Today
 - ✅ Edge functions: career-insights, portfolio-fit, score-engine, push-notifications, university-insights
@@ -141,23 +141,30 @@ PS-26 → PS-27 (expert chatbot RAG)
 | PS-19 | Implement analytics event tracking system | Medium |
 | PS-20 | Build push notification scheduler for daily seed queue refresh | Low |
 | PS-33 | Seed queue A/B test framework integration | Low |
+| PS-34 | [Infra] Edge function deployment and testing pipeline | High |
+| PS-35 | [Infra] Analytics event tracking schema and implementation | High |
+| PS-36 | [Infra] A/B testing framework for feature experiments | Medium |
+| PS-37 | [Mobile] User onboarding flow for profile signals collection | High |
+| PS-38 | [Data] Reflection data model and aggregation schema | High |
+| PS-39 | [Content] Seed content schema for localization | High |
+| PS-40 | [Data] Cohort segmentation logic and definitions | Medium |
 
 ---
 
 ## Ticket Summary
 
-**Total open tickets:** 33 (PS-1 through PS-33)
+**Total open tickets:** 40 (PS-1 through PS-40)
 
 **By Priority:**
-- High (P1): 11 tickets (PS-1, PS-2, PS-3, PS-11, PS-12, PS-13, PS-14, PS-15, PS-23, PS-24, PS-25, PS-31)
-- Medium (P2): 13 tickets (PS-4, PS-5, PS-6, PS-7, PS-8, PS-16, PS-17, PS-18, PS-19, PS-21, PS-26, PS-28, PS-29, PS-30, PS-32)
-- Low (P3): 9 tickets (PS-9, PS-10, PS-20, PS-22, PS-27, PS-33)
+- High (P1): 17 tickets (PS-1, PS-2, PS-3, PS-11, PS-12, PS-13, PS-14, PS-15, PS-23, PS-24, PS-25, PS-31, PS-34, PS-35, PS-37, PS-38, PS-39)
+- Medium (P2): 17 tickets (PS-4, PS-5, PS-6, PS-7, PS-8, PS-16, PS-17, PS-18, PS-19, PS-21, PS-26, PS-28, PS-29, PS-30, PS-32, PS-36, PS-40)
+- Low (P3): 6 tickets (PS-9, PS-10, PS-20, PS-22, PS-27, PS-33)
 
 **By Phase:**
 - Phase 1 Foundation: 16 tickets (PS-1 through PS-5, PS-11 through PS-17, PS-23 through PS-25, PS-28, PS-29, PS-31, PS-32)
 - Phase 2 AI/Expert: 4 tickets (PS-9, PS-10, PS-26, PS-27)
 - Phase 3 Social: 6 tickets (PS-6, PS-7, PS-8, PS-21, PS-22, PS-30)
-- Infrastructure: 7 tickets (PS-18, PS-19, PS-20, PS-33 + edge functions)
+- Infrastructure: 11 tickets (PS-18, PS-19, PS-20, PS-33, PS-34, PS-35, PS-36, PS-37, PS-38, PS-39, PS-40)
 
 ---
 
@@ -167,21 +174,28 @@ PS-26 → PS-27 (expert chatbot RAG)
 1. **PS-11** - Database migrations for Phase 1 (unblocks everything)
 2. **PS-12** - Create user_profile_signals table
 3. **PS-31** - Build content localization workflow (parallel, unblocks PathLab)
+4. **PS-34** - Edge function deployment pipeline (parallel, infra readiness)
+5. **PS-35** - Analytics event tracking schema (parallel, measurement foundation)
 
 ### Sprint 2 (Week 3-4): Data Collection
-4. **PS-23** - Profile signals data collection layer
-5. **PS-13** - Career-insights edge function for ikigai
-6. **PS-3** - Seed content localization system (TH/EN)
+6. **PS-23** - Profile signals data collection layer
+7. **PS-37** - User onboarding flow for profile signals (depends on PS-12)
+8. **PS-13** - Career-insights edge function for ikigai
+9. **PS-3** - Seed content localization system (TH/EN)
+10. **PS-38** - Reflection data model and aggregation schema
+11. **PS-39** - Seed content schema for localization
 
 ### Sprint 3 (Week 5-6): Core Algorithms
-7. **PS-24** - Seed ranking edge function
-8. **PS-25** - Ikigai edge function MVP
-9. **PS-15** - Seed ranking algorithm implementation
+12. **PS-24** - Seed ranking edge function
+13. **PS-25** - Ikigai edge function MVP
+14. **PS-15** - Seed ranking algorithm implementation
 
 ### Parallel Tracks
-- **PS-29** - Reflection trends aggregation (can start after PS-23)
+- **PS-29** - Reflection trends aggregation (can start after PS-23, PS-38)
 - **PS-30** - Cohort segmentation spec (can start anytime)
+- **PS-40** - Cohort segmentation logic (can start anytime)
 - **PS-32** - Ikigai visualization (depends on PS-25)
+- **PS-36** - A/B testing framework (can start after PS-35)
 
 ---
 
@@ -213,4 +227,19 @@ PS-26 → PS-27 (expert chatbot RAG)
 - All tickets currently in Backlog state
 - Priority should be re-evaluated before starting each phase
 - Consider batching Phase 1 tickets into sprints of 3-4 tickets each
-- Duplicates should be closed in favor of PS-53 through PS-60
+
+---
+
+## New Tickets Created (2026-03-28 09:46)
+
+**7 infrastructure tickets to fill foundational gaps:**
+
+| Ticket | Title | Priority | Purpose |
+|--------|-------|----------|---------|
+| PS-34 | [Infra] Edge function deployment and testing pipeline | High | CI/CD for Supabase edge functions with automated testing |
+| PS-35 | [Infra] Analytics event tracking schema and implementation | High | Define event schema, tracking hooks, dashboards for DAU/completion/reflection metrics |
+| PS-36 | [Infra] A/B testing framework for feature experiments | Medium | Infrastructure for A/B tests on ranking, UI, notifications |
+| PS-37 | [Mobile] User onboarding flow for profile signals collection | High | First-run experience to collect interests, strengths, values, career curiosities |
+| PS-38 | [Data] Reflection data model and aggregation schema | High | Schema optimized for ikigai calculation and daily/weekly/monthly aggregations |
+| PS-39 | [Content] Seed content schema for localization | High | TH/EN content schema with translation workflow for expert contributors |
+| PS-40 | [Data] Cohort segmentation logic and definitions | Medium | Define cohort segments by school type, region, interests, career goals |
