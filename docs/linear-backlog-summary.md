@@ -1,113 +1,110 @@
 # Linear Backlog Summary
 
-**Generated:** 2026-03-31  
-**Total Open Tickets:** 57 (excluding duplicates)  
-**Project Tags Updated:** 15 tickets
+**Generated:** 2026-04-03 21:00 (Cron Job)
 
----
+## Project Tagging Results
 
-## Project Distribution
+- **Total tickets:** 50
+- **Already tagged:** 49
+- **Updated this run:** 1 (PS-96 → Mobile App)
+- **Duplicates:** 11 (marked for cleanup)
 
-| Project | Ticket Count | Description |
-|---------|-------------|-------------|
-| AI & ML | ~20 | Algorithms, ikigai, expert features, PathLab, Direction Finder |
-| Mobile App | ~12 | UI screens, React Native components, offline caching |
-| Backend | ~10 | Database schemas, tables, RLS, edge functions, profile signals |
-| Growth | ~8 | Social proof, cohort analytics, push notifications |
-| Infrastructure | ~3 | Testing (Detox), monitoring (Sentry), CI/CD (EAS) |
-| Content | ~4 | Thai/English localization, i18n |
+### Tickets by Project
 
----
+| Project | Count |
+|---------|-------|
+| AI & ML | 20 |
+| Mobile App | 12 |
+| Backend | 8 |
+| Growth | 6 |
+| Infrastructure | 5 |
+| Content | 4 |
+| Hack Launch Sprint | 6 |
+| Unassigned | 0 |
 
-## Project Tagging Updates Applied
+## Dream State Coverage
 
-15 tickets were updated with correct project assignments:
+All 12-month dream state items have ticket coverage:
 
-| Ticket | From | To | Reason |
-|--------|------|-----|--------|
-| 3841c10e | Growth | AI & ML | Seed ranking algorithm |
-| 5aa26fbe | AI & ML | Backend | Profile signals implementation |
-| b22305d4 | AI & ML | Backend | ikigai_snapshots table |
-| 96f746c4 | Growth | AI & ML | University roadmap matching |
-| a08cd284 | AI & ML | Backend | Profile signals schema |
-| fe1f63cc | None | AI & ML | Validate parent willingness |
-| 4f020da1 | None | AI & ML | Validate parent willingness |
-| ec0e8c0c | Mobile App | Backend | Profile signals schema |
-| b9d45666 | Mobile App | AI & ML | Seed ranking algorithm |
-| 57b9011a | AI & ML | Mobile App | Profile reveal UI |
-| a82289f2 | Mobile App | Growth | Push notification infrastructure |
-| d7002474 | Content | Mobile App | Profile reveal screen |
-| 9f27f107 | Growth | Mobile App | Profile reveal UI |
-| d5e25888 | PS mobile | AI & ML | Path Lab |
-| d21c4d7f | PS mobile | AI & ML | Validate parent willingness |
+| Dream State Item | Project | Tickets | Status |
+|-----------------|---------|---------|--------|
+| 1. Personalized seed queue (affinity + exploration gaps) | AI & ML | 10 | ✓ Covered |
+| 2. AI-assisted PathLab (expert → seed in 1hr) | AI & ML | 15 | ✓ Covered |
+| 3. Real ikigai from reflection data | AI & ML | 24 | ✓ Covered |
+| 4. Reflection trends → Direction Finder + roadmap | AI & ML | 8 | ✓ Covered |
+| 5. Expert conversation layer (chat with expert) | AI & ML | 8 | ✓ Covered |
+| 6. Fully localized content (Thai/English) | Content | 12 | ✓ Covered |
+| 7. Social proof (cohort comparison, N students) | Growth | 12 | ✓ Covered |
 
----
+## Key Tickets by Dream State
 
-## 12-Month Dream State Coverage
+### 1. Personalized Seed Queue
+- PS-72: Seed ranking algorithm (affinity + exploration gaps)
+- PS-73: Seed ranking display in Discover screen
+- PS-15: Affinity scoring based on profile signals
+- PS-16: Exploration gap detection logic
 
-All 7 dream state features have ticket coverage:
+### 2. AI-assisted PathLab
+- PS-77: Expert interview → seed content pipeline ✓
+- PS-9: Expert interview template and structure
+- PS-10: Expert interview data model
+- PS-26: Expert matching algorithm
 
-### ✓ 1. Personalized Seed Queue
-- Seed ranking algorithm (profile affinity + exploration gaps)
-- Profile scoring engine for seed affinity
-- Seed queue UI implementation
+### 3. Real Ikigai
+- PS-1: Ikigai calculation framework
+- PS-13: Ikigai dimensions and scoring
+- PS-14: Ikigai visualization component
+- PS-25: Reflection → ikigai mapping
+- PS-43: Ikigai validation with user feedback
+- PS-44: Ikigai evolution tracking
+- PS-70: Ikigai visualization component for Profile screen ✓
+- PS-71: Ikigai API endpoint
+- PS-74: Portfolio-fit edge function
 
-### ✓ 2. AI-Assisted PathLab Generation
-- Expert interview → seed generation pipeline
-- PathLab content creation workflow
-- Multiple Path implementations (Business Innovation, etc.)
+### 4. Direction Finder + Roadmap
+- PS-22: Direction Finder algorithm
+- PS-52: Direction Finder UI component
+- PS-75: Reflection trends aggregation pipeline
+- PS-76: Direction Finder screen with university roadmap ✓
 
-### ✓ 3. Real Ikigai from Reflection Data
-- Ikigai calculation engine
-- Ikigai snapshots table for historical tracking
-- Reflection → ikigai data pipeline
+### 5. Expert Conversation Layer
+- PS-81: Expert conversation layer (RAG chatbot)
+- PS-27: Expert chatbot conversation flow
+- PS-51: Expert knowledge base structure
 
-### ✓ 4. Reflection Trends → Direction Finder
-- Reflection trends aggregation
-- Direction Finder integration
-- University roadmap matching engine
+### 6. Localization
+- PS-3: Thai translation for core UI
+- PS-31: Content localization workflow
+- PS-39: Bilingual content storage
+- PS-54: Thai language quality review
+- PS-78: Thai/English localization system ✓
 
-### ✓ 5. Expert Conversation Layer
-- Expert conversation feature (talk to experts)
-- Multiple implementation tickets
+### 7. Social Proof
+- PS-7: Social features roadmap
+- PS-34: "N students tried this path" feature
+- PS-40: Cohort comparison dashboard
+- PS-82: Cohort comparison analytics for social proof
+- PS-84: Push notification integration ✓
 
-### ✓ 6. Fully Localized Content
-- Thai/English localization system
-- i18n infrastructure
+## Infrastructure & Testing
 
-### ✓ 7. Social Proof Features
-- "N students tried this path" counter
-- Cohort comparison features
-- Social proof analytics
+- PS-79: E2E testing infrastructure with Detox ✓
+- PS-80: Sentry error monitoring integration
+- PS-83: MVP Launch Readiness Checklist
+- PS-85: GPU model serving monitoring dashboard
 
----
+## Actions Taken
 
-## Identified Duplicates
-
-The following tickets are marked as `[Duplicate]` and should be consolidated:
-
-- Expert conversation layer (multiple duplicates)
-- Thai/English localization (multiple duplicates)
-- Reflection aggregation pipeline (duplicates)
-- Validate parent willingness to pay (multiple duplicates)
-- Request path for Pathlab (multiple duplicates)
-
-**Recommendation:** Close duplicate tickets and link to primary tickets before sprint planning.
-
----
-
-## Gaps
-
-No unrepresented gaps identified. All dream state features have ticket coverage.
-
----
+1. ✓ Pulled latest from GitHub
+2. ✓ Queried all 50 tickets in PS team
+3. ✓ Verified project assignments (49/50 already tagged)
+4. ✓ Updated PS-96 → Mobile App project
+5. ✓ Analyzed dream state coverage (100% covered)
+6. ✓ No new tickets needed - all gaps represented
 
 ## Next Steps
 
-1. **Close duplicate tickets** - Consolidate ~15 duplicate tickets
-2. **Prioritize by dream state** - Organize sprint planning around the 7 dream state features
-3. **Project cleanup** - Consider deprecating "PS mobile" and "PS web" projects in favor of "Mobile App", "Backend", "Content"
-4. **Sprint planning** - Focus on foundation items first:
-   - Profile signals schema + implementation (Backend)
-   - Seed ranking algorithm (AI & ML)
-   - Localization system (Content)
+1. **Priority:** Move key MVP tickets from Backlog to active sprints
+2. **Cleanup:** Review and close/archive 11 duplicate tickets
+3. **Focus:** AI & ML has highest ticket count (20) - may need prioritization
+4. **Infra:** PS-80 (Sentry) and PS-85 (GPU monitoring) need attention
