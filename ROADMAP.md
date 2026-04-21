@@ -1,7 +1,7 @@
 # Passion Seed Mobile App - Product Roadmap
 
-**Last updated:** March 28, 2026  
-**GitHub:** https://github.com/Ongpaoaa/ps_app  
+**Last updated:** April 20, 2026  
+**GitHub:** https://github.com/passionseed/ps_app  
 **Linear:** PS team (tickets PS-XX)
 
 ---
@@ -18,86 +18,18 @@
 
 ---
 
-## Phase 1: MVP Foundation (Sprint 1-3)
+## Active Backlog Summary (76 open tickets)
 
-**Goal:** Ship core loop with basic personalization
+| Project | Count | Key Tickets |
+|---------|-------|-------------|
+| AI & ML | 27 | PS-1 Ikigai, PS-9 PathLab gen, PS-15 seed ranking, PS-21 Direction Finder, PS-29 reflection trends, PS-81 expert chat |
+| Growth | 17 | PS-7 social proof, PS-8 university roadmap, PS-19 analytics, PS-20 push notifications |
+| Mobile App | 10 | PS-14 profile ikigai, PS-16 discover ranking, PS-37 onboarding, PS-84 push |
+| Content | 10 | PS-3 localization, PS-59 seed CMS, PS-100 translation |
+| Backend | 7 | PS-11 migrations, PS-12 profile signals, PS-13 ikigai edge, PS-47 portfolio-fit |
+| Infrastructure | 8 | PS-34 edge deploy, PS-50 feature flags, PS-83 MVP readiness |
 
-### Data Layer
-- [x] PS-42: user_profile_signals table schema
-- [x] PS-38: Reflection data model and aggregation schema
-- [x] PS-83: Seed completion tracking and user progress aggregation
-- [ ] PS-67: RLS policies for user data isolation *(new)*
-
-### Core Features
-- [ ] PS-68: User onboarding flow for profile signals collection *(new)*
-- [ ] PS-69: Seed completion tracking UI and progress indicators *(new)*
-- [ ] PS-70: Ikigai visualization component for Profile screen *(new)*
-- [ ] PS-71: Connect profile.tsx to real ikigai edge function *(new)*
-
-### Personalization
-- [ ] PS-72: Seed ranking algorithm (affinity + exploration gaps) *(new)*
-- [ ] PS-73: Seed ranking display in Discover screen *(new)*
-- [ ] PS-74: portfolio-fit edge function for seed → user matching *(new)*
-
-### Infrastructure
-- [ ] PS-58: MVP Scope Definition and Prioritization
-- [ ] PS-79: E2E testing infrastructure with Detox *(new)*
-- [ ] PS-80: Sentry error monitoring integration *(new)*
-- [ ] PS-78: Thai/English localization system *(new)*
-
----
-
-## Phase 2: Intelligence & Insights (Sprint 4-6)
-
-**Goal:** Add AI-powered features and analytics
-
-### Analytics
-- [ ] PS-55: Track seed velocity and Direction Finder readiness
-- [ ] PS-61: Dashboard for seed velocity and completion funnel
-- [ ] PS-75: Reflection trends aggregation pipeline *(new)*
-- [ ] PS-76: Direction Finder screen with university roadmap integration *(new)*
-
-### Advanced Features
-- [ ] PS-52: Direction Finder screen with university roadmap integration
-- [ ] PS-25: Ikigai edge function MVP
-- [ ] PS-24: Seed ranking edge function (affinity + exploration gaps)
-
-### Content Pipeline
-- [ ] PS-77: Expert interview → seed content pipeline *(new)*
-- [ ] PS-59: Seed creator CMS for expert contributors
-
----
-
-## Phase 3: Social & Expert Layers (Sprint 7-12)
-
-**Goal:** Build community and expert engagement
-
-- [ ] PS-81: Expert conversation layer (RAG chatbot) *(new)*
-- [ ] PS-10: Expert conversation layer (chat with expert avatar)
-- [ ] PS-9: AI-assisted PathLab seed generator
-- [ ] PS-26: AI PathLab seed generator pipeline
-- [ ] PS-82: Cohort comparison analytics for social proof *(new)*
-- [ ] PS-30: Cohort segmentation logic for social proof
-- [ ] PS-40: Cohort segmentation logic and definitions
-
----
-
-## Infrastructure & Quality
-
-### Testing
-- [ ] PS-60: E2E testing with Detox *(new)*
-- [ ] PS-36: A/B testing framework for feature experiments
-- [ ] PS-18: A/B testing infrastructure
-
-### Monitoring
-- [ ] PS-62: Sentry error monitoring *(new)*
-- [ ] PS-35: Analytics event tracking schema
-- [ ] PS-19: Analytics event tracking system
-
-### DevOps
-- [ ] PS-50: Feature flag system for gradual rollouts
-- [ ] PS-34: Edge function deployment and testing pipeline
-- [ ] PS-56: Offline-first seed content caching
+*Full ticket list in Linear: https://linear.app/passionseed/team/PS/all*
 
 ---
 
@@ -141,6 +73,24 @@
 
 ## Changelog
 
+### April 20, 2026 - Backlog Cleanup
+
+**Open backlog:** 79 → 76 tickets (closed 4 duplicates, created 1 new)
+
+**Closed as Duplicate:**
+| Ticket | Canonical | Reason |
+|--------|-----------|--------|
+| PS-45 | PS-16 | Both cover seed ranking display in Discover screen |
+| PS-72 | PS-15 | Identical title: "Seed ranking algorithm (affinity + exploration gaps)" |
+| PS-75 | PS-29 | Reflection trends aggregation — PS-29 has full scope description |
+| PS-82 | PS-22 | Cohort comparison analytics — PS-22 is primary |
+
+**Updated:**
+- PS-9: Clarified expert interview → seed in ~1 hour PathLab workflow (full pipeline: interview → Thai NLP → seed structure → CMS review → publish)
+
+**Created:**
+- PS-101: University roadmap matching algorithm (AI & ML) — closes gap in Dream State #4: reflection trends + Direction Finder → ranked university program matches. Integrates with PS-29, PS-21, PS-66, PS-57.
+
 ### March 28, 2026 - PM (Cron Job)
 
 **Duplicate Cleanup Complete:** Marked 14 duplicate tickets and moved to "Duplicate" state:
@@ -164,14 +114,17 @@
 
 **Total active backlog:** 50 tickets → 36 unique after deduplication
 
-**Dream State Coverage:** All 7 dream state features are now covered by active tickets:
-1. ✅ Personalized seed queue — PS-72 (algorithm), PS-45 (display), PS-47 (portfolio-fit)
-2. ✅ AI-assisted PathLab — PS-51 (expert→seed), PS-65 (GPU serving)
-3. ✅ Real ikigai — PS-43 (calculation), PS-44 (visualization), PS-71 (integration)
-4. ✅ Reflection trends → Direction Finder — PS-75 (trends), PS-52 (Direction Finder)
-5. ✅ Expert conversation — PS-81 (RAG chatbot)
-6. ✅ Localization — PS-54 (i18n system)
-7. ✅ Social proof — PS-82 (cohort comparison)
+**Dream State Coverage** (as of April 20, 2026):
+
+| # | Dream State Item | Primary Tickets |
+|---|-----------------|-----------------|
+| 1 | Personalized seed queue (affinity + exploration gaps) | PS-15 (algorithm), PS-16 (Discover UI), PS-47 (portfolio-fit edge) |
+| 2 | AI-assisted PathLab (expert interview → seed in 1 hr) | PS-9 (generator, updated), PS-26 (pipeline), PS-65 (GPU serving) |
+| 3 | Real ikigai from reflection data | PS-1, PS-13 (edge fn), PS-43 (calculation pipeline), PS-44+PS-14+PS-32 (visualization) |
+| 4 | Reflection trends → Direction Finder + university match | PS-29 (trends pipeline), PS-28 (→Direction Finder), PS-101 (university roadmap algo, NEW) |
+| 5 | Expert conversation layer (RAG chatbot) | PS-10, PS-27 (Phase 2), PS-81 (RAG chatbot) |
+| 6 | Fully localized seed content (Thai/English) | PS-3 (i18n system), PS-31 (contributor workflow), PS-100 (translation) |
+| 7 | Social proof: N students tried + cohort comparison | PS-7 (counters), PS-22 (cohort analytics), PS-30 (segmentation) |
 
 ### March 28, 2026 - Ticket Creation Sprint
 
