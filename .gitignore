@@ -44,3 +44,6 @@ yarn-error.*
 build-*.ipa
 build-*
 /PassionSeedDevelopment.app
+
+# Tester contact lists (PII), never commit
+beta_tester_emails.txt
